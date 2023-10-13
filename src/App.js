@@ -3,6 +3,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 
 import { ColorModeContext, useMode } from "./theme";
 
+import TopBar from "./scenes/global/TopBar";
 import Dashboard from "./scenes/dashboard";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <CssBaseline />
         <div className="app">
           <main className="content">
+            <TopBar />
             <Routes>
               <Route path="/" element={<Dashboard />} />
               {/* <Route path="/team" element={<Team />} />

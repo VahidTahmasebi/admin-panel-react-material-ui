@@ -11,7 +11,7 @@ import SearchIcon from "@mui/icons-material/Search";
 
 import { ColorModeContext, tokens } from "../../theme";
 
-const TopBar = () => {
+const Topbar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const colorMode = useContext(ColorModeContext);
@@ -19,7 +19,7 @@ const TopBar = () => {
   return (
     <Box display="flex" justifyContent="space-between" p={2}>
       {/* search bar */}
-      
+
       <Box
         display="flex"
         borderRadius="3px"
@@ -53,4 +53,4 @@ const TopBar = () => {
   );
 };
 
-export default TopBar;
+export default Topbar;

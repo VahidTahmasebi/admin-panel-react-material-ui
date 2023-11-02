@@ -19,6 +19,7 @@ const TopBar = () => {
   return (
     <Box display="flex" justifyContent="space-between" p={2}>
       {/* search bar */}
+      
       <Box
         display="flex"
         borderRadius="3px"
